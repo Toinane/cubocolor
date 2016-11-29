@@ -1,0 +1,38 @@
+body{
+	background: rgb(45, 46, 48);
+	font-family: sans-serif;
+	text-align: center;
+	color: rgb(250, 250, 250);
+}
+h1{
+	font-size: 7em;
+	color: rgb(254, 150, 13);
+}
+.t1{animation: title 4s ease-in-out infinite;}
+.t2{animation: title 12s ease-in-out infinite;}
+.t3{animation: title 9s ease-in-out infinite;}
+.t4{animation: title 6s ease-in-out infinite;}
+.t5{animation: title 11s ease-in-out infinite;}
+.t6{animation: title 8s ease-in-out infinite;}
+.t7{animation: title 7s ease-in-out infinite;}
+@keyframes title{
+	1%, 49%{
+		color: rgb(254, 150, 13);
+	}
+   	50%, 100%{
+   		color: rgb(13, 127, 254);
+   	}
+}
+a{
+	text-decoration: none;
+	color: rgb(155, 156, 158);
+	background: rgb(35, 36, 38);
+	padding: 15px 65px;
+	border-radius: 5px;
+	font-size: 1.2em;
+	transition: 0.4s;
+}
+a:hover{
+	color: rgb(250, 250, 250);
+	background: rgb(13, 127, 254);
+}

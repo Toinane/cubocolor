@@ -1,0 +1,111 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: rgb(45, 46, 48);
+}
+
+.orange{
+	background: rgb(254, 150, 13) !important;
+}
+.blue{
+	background: rgb(13, 127, 254) !important;
+}
+.black{
+	background: rgb(250, 250, 250);
+}
+.player1{
+	background: url('tiles/player1.png'), url('tiles/stone.png') !important;
+	background-size: cover !important;
+}
+.player2{
+	background: url('tiles/player2.png'), url('tiles/stone.png') !important;
+	background-size: cover !important;
+}
+td[class="player1 player1stone"], td[class="player1stone player1"]{
+	background: url('tiles/player1.png'), url('tiles/orangestone.png') !important;
+	background-size: cover !important;
+}
+td[class="player2 player2stone"], td[class="player2stone player2"]{
+	background: url('tiles/player2.png'), url('tiles/bluestone.png') !important;
+	background-size: cover !important;
+}
+td[class*="player1 player2"], td[class*="player2 player1"]{
+	background: url('tiles/player0.png'), url('tiles/stone.png') !important;
+	background-size: cover !important;
+}
+.player1stone{
+	background: url('tiles/orangestone.png');
+	background-size: cover !important;
+}
+.player2stone{
+	background: url('tiles/bluestone.png');
+	background-size: cover !important;
+}
+.wall{
+	background: url('tiles/wall.png');
+	background-size: cover !important;
+}
+.walltop{
+	background: url('tiles/walltop.png');
+	background-size: cover !important;
+}
+
+
+
+section{
+	display: inline-block;
+	vertical-align: top;
+}
+.player1-box, .player2-box{
+	position: absolute;
+	background: rgb(25, 26, 28);
+	margin-top: 15%;
+	padding: 50px 10px;
+}
+	section aside{
+		margin: 20px 0;
+	}
+		section div{
+			display: inline-block;
+			vertical-align: middle;
+			width: 50px;
+			height: 50px;
+		}
+		section p{
+			display: inline-block;
+			vertical-align: middle;
+			color: rgb(250, 250, 250);
+			font-size: 1.7em;
+			margin: 0;
+		}
+.player1-box{
+	border-radius: 0 15px 15px 0;
+	left: 0;
+}
+.player2-box{
+	right: 0;
+	border-radius: 15px 0 0 15px;
+}
+.game-area{
+	width: 100%;
+	margin-top: 3%;
+}
+	.timer{
+		background: rgb(35, 36, 38);
+		position: absolute;
+		padding: 10px 50px;
+	}
+	table{
+		margin: auto;
+	}
+	table, td{
+		border-collapse: collapse;
+		/*border: 1px solid rgb(55, 56, 58);*/
+	}
+	td{
+		height: 38px;
+		width: 38px;
+		background: url('tiles/stone.png');
+		background-size: cover;
+	}
